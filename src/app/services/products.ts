@@ -6,6 +6,11 @@ export interface Product {
   price: number;
   description: string;
   image: string;
+  made: string;
+  since: string;
+  material: string;
+  category: string;
+  color: string;
 }
 
 @Injectable({
@@ -18,6 +23,11 @@ export class ProductsService {
       name: 'Mochila Flamingos',
       price: 799,
       description: 'Diseño tropical con flamencos y palmeras.',
+      made: "Hecho en China",
+      since: "Desde 1989",
+      material: "Lino",
+      category: "Niños",
+      color: "beige y azul marino",
       image: '/img/kip2.jpg'
     },
     {
@@ -25,6 +35,11 @@ export class ProductsService {
       name: 'Mochila Galaxy',
       price: 850,
       description: 'Estilo galáctico con colores brillantes.',
+      made: "Hecho en Japón",
+      since: "Desde 1989",
+      material: "Lino",
+      category: "Niños",
+      color: "beige y azul marino",
       image: '/img/kip3.jpg'
     },
     {
@@ -32,6 +47,11 @@ export class ProductsService {
       name: 'Mochila Cactus',
       price: 730,
       description: 'Fresca y original con estampado de cactus.',
+      made: "Hecho en Tailandia",
+      since: "Desde 1989",
+      material: "Lino",
+      category: "Niños",
+      color: "beige y azul marino",
       image: '/img/kip4.jpg'
     },
     {
@@ -39,6 +59,11 @@ export class ProductsService {
       name: 'Mochila Arcoíris',
       price: 900,
       description: 'Llena de colores vibrantes y felicidad.',
+      made: "Hecho en Portugal",
+      since: "Desde 1989",
+      material: "Lino",
+      category: "Niños",
+      color: "beige y azul marino",
       image: '/img/kip5.jpg'
     },
     {
@@ -46,6 +71,11 @@ export class ProductsService {
       name: 'Mochila Graffiti',
       price: 820,
       description: 'Diseño urbano inspirado en el arte callejero.',
+      made: "Hecho en Portugal",
+      since: "Desde 1989",
+      material: "Lino",
+      category: "Niños",
+      color: "beige y azul marino",
       image: '/img/kip6.jpg'
     },
     {
@@ -53,6 +83,11 @@ export class ProductsService {
       name: 'Mochila Flamingos',
       price: 799,
       description: 'Diseño tropical con flamencos y palmeras.',
+      made: "Hecho en Irlanda",
+      since: "Desde 1989",
+      material: "Lino",
+      category: "Niños",
+      color: "beige y azul marino",
       image: '/img/kip7.jpg'
     },
     {
@@ -60,6 +95,11 @@ export class ProductsService {
       name: 'Mochila Galaxy',
       price: 850,
       description: 'Estilo galáctico con colores brillantes.',
+      made: "Hecho en Japón",
+      since: "Desde 1989",
+      material: "Lino",
+      category: "Niños",
+      color: "beige y azul marino",
       image: '/img/kip8.jpg'
     },
     {
@@ -67,6 +107,11 @@ export class ProductsService {
       name: 'Mochila Cactus',
       price: 730,
       description: 'Fresca y original con estampado de cactus.',
+      made: "Hecho en Marruecos",
+      since: " Desde 1989",
+      material: "Lino",
+      category: "Niños",
+      color: "beige y azul marino",
       image: '/img/kip9.jpg'
     }
   ];

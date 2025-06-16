@@ -8,7 +8,25 @@
             <p>{{producto.description}}</p>
             <strong>${{producto.price}}</strong>
             <br>
-            <button>Ver más</button>
+            <button (click)="openModal(producto)">Ver más</button>
         </article>
     }
 </section>
+
+<!-- Modal -->
+@if (isModalOpen) {
+  <div class="modal-backdrop">
+    <div class="modal">
+      <span class="close-button" (click)="closeModal()">×</span>
+      <h2>{{selectedProduct?.name}}</h2>
+      <img [src]="selectedProduct?.image" [alt]="selectedProduct?.name">
+      <p>{{selectedProduct?.description}}</p>
+      <p>{{selectedProduct?.made}}</p>
+      <p>{{selectedProduct?.since}}</p>
+      <p>Mterial: {{selectedProduct?.material}}</p>
+      <p>Categoria: {{selectedProduct?.category}}</p>
+      <p>Color: {{selectedProduct?.color}}</p>
+      <strong>Precio: ${{selectedProduct?.price}}</strong>
+    </div>
+  </div>
+}
