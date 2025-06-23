@@ -3,3 +3,17 @@ h1 {
     font-size: 40px;
     letter-spacing: 10px;
 }
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.intro .logo {
+  width: 180px;
+  object-fit: contain;
+}
